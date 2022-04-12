@@ -37,12 +37,16 @@ if __name__ == "__main__":
         **business_days,
     }
 
-    get_birthday_per_week([{"name": "Fedir", "birthday": datetime(1996, 10, 03)},
-                           {"name": "Maksym", "birthday": datetime(1991, 09, 10)},
-                           {"name": "Leonid", "birthday": datetime(2001, 02, 04)},
-                           {"name": "Kostiantyn", "birthday": datetime(2001, 07, 24)},
-                           {"name": "Serhii", "birthday": datetime(2002, 02, 08)},
-                           {"name": "Valentyn", "birthday": datetime(1997, 12, 28)},
-                           {"name": "Mykola", "birthday": datetime(1998, 11, 21)},
-                           {"name": "Mykhailo", "birthday": datetime(1992, 06, 12)},
-                           {"name": "Ivan", "birthday": datetime(1994, 10, 28)}])
+    users = [
+        {"name": "Fedir", "birthday": datetime.fromisoformat("1998-07-16 10:10:10")},
+        {"name": "Maksym", "birthday": datetime.fromisoformat("2021-03-18 10:10:10")},
+        {"name": "Leonid", "birthday": datetime.fromisoformat("2001-05-19 10:10:10")},
+        {"name": "Kostiantyn", "birthday": datetime.fromisoformat("1990-12-17 10:10:10")},
+        {"name": "Serhii", "birthday": datetime.fromisoformat("1991-10-27 10:10:10")},
+        {"name": "Valentyn", "birthday": datetime.fromisoformat("1970-04-20 10:10:10")},
+        {"name": "Mykola", "birthday": datetime.fromisoformat("1989-01-11 10:10:10")},
+        {"name": "Mykhailo", "birthday": datetime.fromisoformat("1983-12-12 10:10:10")},
+        {"name": "Ivan", "birthday": datetime.fromisoformat("1972-01-21 10:10:10")}
+    ]
+    
+    get_birthdays_per_week(users)
