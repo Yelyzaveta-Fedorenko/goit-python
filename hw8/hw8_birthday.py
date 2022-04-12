@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime, timedelta
 
 def get_birthdays_per_week(users):
         delta_days = 1
@@ -49,4 +49,5 @@ if __name__ == "__main__":
         {"name": "Ivan", "birthday": datetime.fromisoformat("1972-01-21 10:10:10")}
     ]
     
-    get_birthdays_per_week(users)
+
+get_birthdays_per_week(users)
